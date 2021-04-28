@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <head>
 <meta charset="UTF-8">
 <TITLE>계산기</TITLE>
@@ -40,7 +40,7 @@ background-color : rgb(255 , 255 , 255)
 }
         function tan(n) {return Math.tan(n);
 }
-        function PI(n) {return Math.PI * n;
+        function PI() {return Math.PI;
 }
         function fac(n) {if (n==1) return 1;   else return n * fac(n-1);
 }
@@ -54,14 +54,14 @@ background-color : rgb(255 , 255 , 255)
     <form class="cal">
         <input type="text" id="number" value="" readonly size = 34>
         <br/>
-        <input type="button" ID = "zero_button" value = "제곱" onclick="inputext('pow(')">
+        <input type="button" ID = "zero_button" value = "제곱" onclick="inputext('제곱(')">
         <input type="button" ID = "zero_button" value = "sin" onclick="inputext('sin(')">
         <input type="button" ID = "zero_button" value = "cos" onclick="inputext('cos(')">
         <input type="button" ID = "zero_button" value = "tan" onclick="inputext('tan(')">
         <input type="button" ID = "zero_button" value = "√" onclick="inputext('루트(')">
         <br/>
-        <input type="button" ID = "zero_button" value = "!" onclick="inputext('fac(')">
-        <input type="button" ID = "zero_button" value = "π" onclick="inputext('PI(')">
+        <input type="button" ID = "zero_button" value = "!" onclick="inputext('!(')">
+        <input type="button" ID = "zero_button" value = "파이" onclick="inputext('PI()')">
         <input type="button" ID = "zero_button" value = "," onclick="inputext(',')">
         <input type="button" ID = "zero_button" value = "반올림" onclick="inputext('round(')">
         <input type="button" ID = "zero_button" value = "함수끝" onclick="inputext(')')">
